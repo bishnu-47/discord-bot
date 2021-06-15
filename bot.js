@@ -30,9 +30,9 @@ client.on("message", msg => {
 })
 
 client.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.cache.find(ch => ch.name === 'member-log');
+    const channel = member.guild.channels.cache.find(ch => ch.name === 'general');
     if (!channel) return;
-    channel.send(`Welcome to the server, ${member}`);
+    channel.send(`Aa gaye meri maut ka tamasha dekhne, ${member}`);
 });
 
 // music related code
